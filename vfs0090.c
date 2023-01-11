@@ -3154,4 +3154,6 @@ fpi_device_vfs0090_class_init (FpiDeviceVfs0090Class *klass)
   dev_class->identify = dev_activate;
   dev_class->capture = dev_activate;
   dev_class->cancel = dev_cancel;
+
+  fpi_device_class_auto_initialize_features (dev_class);
 }
